@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: aqua;
+}
+
+.container {
+    margin: auto;
+    padding: 20px;
+    max-width: 600px;
+    background: greenyellow;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+#pendulumContainer {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid aqua;
+    margin: 20px 0;
+}
+
+#string {
+    width: 2px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: #333;
+}
+
+#pendulum {
+    width: 20px;
+    height: 20px;
+    background: red; /* Red color for the bob */
+    border-radius: 50%; /* Make it circular */
+    position: absolute;
+    bottom: 0; /* Align at the bottom of the string */
+    left: 50%;
+    transform: translate(-50%, 0);
+}
